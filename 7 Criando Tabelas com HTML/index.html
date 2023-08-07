@@ -16,11 +16,15 @@
 </head>
 <body>
     <table summary="esta tabela se refere as idades da turma A da Dio" border="1" width="250" cellspacing="5" cellpadding="5" align="center">
-        <tbody>
+        <caption title="descrição da tabela">Tabela de idades dos alunos Dio.me</caption>
+        <thead>
             <tr>
                 <th title="Nome completo">Nome</th>
                 <th title="Idade">Idade</th>
             </tr>
+        </thead>
+
+        <tbody>        
             <tr id="1">
                 <td>Diogo</td>
                 <td>37</td>
@@ -46,6 +50,15 @@
                 <td>26</td>
             </tr>
         </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>6</td>
+               <!-- <td> tr>td*2</td> --> 
+            </tr>
+        </tfoot>
+
     </table>
 </body>
 </html>
