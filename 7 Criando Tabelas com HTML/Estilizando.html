@@ -6,18 +6,43 @@
     <title>tabalhando com tabelas - DIO.me</title>
     <style>
 
-        table tr:nth-child(even){
-            background-color: burlywood;
+        table {
+           /* border: solid 1px black; */
+           /* border: dashed 1px black; */
+           border: dotted 1px gray;
+
+           -webkit-box-shadown: 12px 14px 6px 5px rgba(0,0,0,0.24);
+           box-shadow: 12px 14px 6px 5px rgba(0,0,0,0.24);
         }
-        table tr:hover td{
-            background-color: darkgray;
+
+        table thead th{
+            background-color: black;
+            color: white;
         }
+
+        table tbody tr:nth-child(even) td {
+            background-color: #f1f1f1;
+        }
+
+        table tbody tr:hover td{
+            background-color: #E9E9E9;
+            cursor: pointer;
+        }
+
+        table tfoot td{
+            background-color: lightgray;
+        }
+
     </style>
 </head>
 <body>
-    <table summary="esta tabela se refere as idades da turma A da Dio" border="1" width="250" cellspacing="5" cellpadding="5" align="center">
+    <table summary="esta tabela se refere as idades da turma A da Dio" width="250" cellspacing="0" cellpadding="5" align="center">
         <caption title="descrição da tabela">Tabela de idades dos alunos Dio.me</caption>
         <thead>
+            <tr>
+                <th style="background-color: rgb(70, 52, 52);" colspan="2">Minha Tabela</th>
+                <!-- <th rowspan="2">Minha Tabela</th> -->
+            </tr>
             <tr>
                 <th title="Nome completo">Nome</th>
                 <th title="Idade">Idade</th>
